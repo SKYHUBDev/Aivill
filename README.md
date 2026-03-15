@@ -10,20 +10,10 @@ Adaptive AI Villains for Games
 Self-learning game enemies that observe, adapt, and evolve.
 </p>
 
-<p align="center">
-  <a href="https://pypi.org/project/aivill/">
-    <img src="https://img.shields.io/pypi/v/aivill.svg" alt="PyPI Version">
-  </a>
-  <a href="https://pypi.org/project/aivill/">
-    <img src="https://img.shields.io/pypi/pyversions/aivill.svg" alt="Python Version">
-  </a>
-  <a href="LICENSE">
-    <img src="https://img.shields.io/pypi/l/aivill.svg" alt="License">
-  </a>
-  <a href="https://github.com/aivill/aivill/stargazers">
-    <img src="https://img.shields.io/github/stars/aivill/aivill?style=social" alt="GitHub Stars">
-  </a>
-</p>
+![PyPI](https://img.shields.io/pypi/v/aivill)
+![Python](https://img.shields.io/pypi/pyversions/aivill)
+![License](https://img.shields.io/pypi/l/aivill)
+![Stars](https://img.shields.io/github/stars/instax-dutta/Aivill)
 
 ## PyPI
 
