@@ -1,0 +1,12 @@
+{
+  "traits": {
+    "aggression": 0.6,
+    "patience": 0.5,
+    "ego": 0.7,
+    "chaos": 0.4,
+    "adaptability": 0.5,
+    "caution": 0.4
+  },
+  "description": "Default personality configuration for the villain brain",
+  "version": "1.0"
+}

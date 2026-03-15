@@ -1,0 +1,103 @@
+{
+  "entries": [
+    {
+      "villain_name": "trap_master_v2",
+      "strategy": "adaptive_trap_strategy",
+      "win_rate": 0.91,
+      "rounds_tested": 100,
+      "rank": 1,
+      "personality": {
+        "aggression": 0.3,
+        "patience": 0.9,
+        "ego": 0.5,
+        "chaos": 0.2,
+        "adaptability": 0.8,
+        "caution": 0.7
+      },
+      "description": "Patient trap-based strategy that adapts to player movement patterns",
+      "submitted": "2026-03-16T02:43:37.761918"
+    },
+    {
+      "villain_name": "chaos_overlord",
+      "strategy": "chaos_manipulation",
+      "win_rate": 0.86,
+      "rounds_tested": 100,
+      "rank": 2,
+      "personality": {
+        "aggression": 0.9,
+        "patience": 0.3,
+        "ego": 0.8,
+        "chaos": 0.95,
+        "adaptability": 0.6,
+        "caution": 0.2
+      },
+      "description": "Unpredictable villain that thrives on chaos and aggression",
+      "submitted": "2026-03-16T02:43:37.762429"
+    },
+    {
+      "villain_name": "mind_reader",
+      "strategy": "predictive_counter",
+      "win_rate": 0.82,
+      "rounds_tested": 100,
+      "rank": 3,
+      "personality": {
+        "aggression": 0.5,
+        "patience": 0.8,
+        "ego": 0.6,
+        "chaos": 0.1,
+        "adaptability": 0.95,
+        "caution": 0.5
+      },
+      "description": "Highly adaptive strategy that learns and predicts player patterns",
+      "submitted": "2026-03-16T02:43:37.762429"
+    },
+    {
+      "villain_name": "aggressive_berserker",
+      "strategy": "rush_strategy",
+      "win_rate": 0.78,
+      "rounds_tested": 100,
+      "rank": 4,
+      "personality": {
+        "aggression": 0.95,
+        "patience": 0.2,
+        "ego": 0.9,
+        "chaos": 0.3,
+        "adaptability": 0.4,
+        "caution": 0.1
+      },
+      "description": "Overwhelming aggressive force that doesn't give players time to think",
+      "submitted": "2026-03-16T02:43:37.762429"
+    },
+    {
+      "villain_name": "test_villain",
+      "strategy": "test_strategy",
+      "win_rate": 0.75,
+      "rounds_tested": 50,
+      "rank": 5,
+      "personality": {
+        "aggression": 0.5,
+        "patience": 0.5
+      },
+      "description": "",
+      "submitted": "2026-03-16T02:43:37.763434"
+    },
+    {
+      "villain_name": "defensive_turtle",
+      "strategy": "fortress_strategy",
+      "win_rate": 0.65,
+      "rounds_tested": 100,
+      "rank": 6,
+      "personality": {
+        "aggression": 0.2,
+        "patience": 0.9,
+        "ego": 0.3,
+        "chaos": 0.1,
+        "adaptability": 0.5,
+        "caution": 0.95
+      },
+      "description": "Nearly impenetrable defense that waits for player mistakes",
+      "submitted": "2026-03-16T02:43:37.763434"
+    }
+  ],
+  "updated": "2026-03-16T02:43:37.763434"
+}

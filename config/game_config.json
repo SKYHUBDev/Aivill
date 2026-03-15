@@ -1,0 +1,26 @@
+{
+  "game": {
+    "max_turns": 20,
+    "turn_timeout_seconds": 300,
+    "auto_save": true,
+    "auto_save_interval": 5
+  },
+  "difficulty": {
+    "player_skill": 0.5,
+    "resource_multiplier": 1.0,
+    "villain_adaptation_rate": 0.3
+  },
+  "ai": {
+    "ollama_enabled": false,
+    "ollama_model": "llama2",
+    "ollama_url": "http://localhost:11434",
+    "learning_rate": 0.1,
+    "exploration_rate": 0.2
+  },
+  "logging": {
+    "level": "INFO",
+    "log_to_file": true,
+    "log_events": true
+  },
+  "version": "1.0"
+}
