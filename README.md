@@ -2,10 +2,34 @@
 
 Adaptive AI Villains for Games
 
+<p align="center">
+Adaptive AI Villains for Games
+</p>
+
+<p align="center">
+Self-learning game enemies that observe, adapt, and evolve.
+</p>
+
 [![PyPI Version](https://img.shields.io/pypi/v/aivill.svg)](https://pypi.org/project/aivill/)
 [![Python Version](https://img.shields.io/pypi/pyversions/aivill.svg)](https://pypi.org/project/aivill/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/aivill/aivill?style=social)](https://github.com/aivill/aivill/stargazers)
+
+## PyPI
+
+AiVill is now available on PyPI.
+
+https://pypi.org/project/aivill/
+
+<p align="center">
+  <img src="assets/aivill-logo.png" width="220">
+</p>
+
+<h1 align="center">AiVill</h1>
+
+<p align="center">
+Adaptive AI Villains for Games
+</p>
 
 AiVill is a **modular AI engine that creates adaptive villains capable of learning player behavior and evolving strategies across sessions**.
 
@@ -40,6 +64,34 @@ The goal isn't just a harder enemy — it's a **living antagonist** that makes e
 * **Modular Architecture** — Swap components as needed
 * **Game-Agnostic Design** — Integrate with any game genre
 * **Simple API** — Full integration in under 10 lines of code
+
+---
+
+## Installation
+
+```bash
+pip install aivill
+```
+
+## Quick Start
+
+```python
+from aivill import VillainEngine
+
+# Create and initialize
+villain = VillainEngine()
+villain.initialize({"data_dir": "data"})
+
+# Game loop
+while game_running:
+    villain.update_state(game_state)
+    action = villain.decide_action()
+    villain.learn_from_result(result)
+
+villain.save_memory()
+```
+
+For more examples, see the [examples](examples/) directory.
 
 ---
 
