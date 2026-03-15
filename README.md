@@ -22,7 +22,7 @@ AiVill is now available on PyPI.
 https://pypi.org/project/aivill/
 
 <p align="center">
-  <img src="assets/aivill-logo.png" width="220">
+  <img src="assets/aivill-logo.svg" width="220">
 </p>
 
 <h1 align="center">AiVill</h1>

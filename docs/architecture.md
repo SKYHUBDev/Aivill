@@ -1,5 +1,9 @@
 # AiVill Architecture
 
+<p align="center">
+  <img src="../assets/aivill-logo.svg" width="150">
+</p>
+
 This document provides an in-depth look at AiVill's system architecture, module interactions, and data flows.
 
 ---

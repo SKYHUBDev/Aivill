@@ -1,5 +1,9 @@
 # AiVill API Documentation
 
+<p align="center">
+  <img src="../assets/aivill-logo.svg" width="150">
+</p>
+
 ## Installation
 
 ```bash
