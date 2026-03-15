@@ -16,7 +16,7 @@ Example:
 For more information, see: https://github.com/aivill/aivill
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.3"
 __author__ = "AiVill Team"
 __license__ = "MIT"
 
