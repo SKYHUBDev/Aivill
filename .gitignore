@@ -8,3 +8,10 @@ build/
 data/
 logs/
 *.jsonl
+.env
+
+# Packaging
+*.whl
+*.tar.gz
+pip-log.txt
+.pip/
